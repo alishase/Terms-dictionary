@@ -67,12 +67,8 @@ const removeDuplicates = (terms) => {
   const uniqueTerms = [];
 
   terms.forEach((term) => {
-    const englishLower = term.english.toLowerCase().trim();
-
-    if (!seen.has(englishLower)) {
-      seen.add(englishLower);
-      uniqueTerms.push(term);
-    }
+    // const englishLower = term.english.toLowerCase().trim();
+    uniqueTerms.push(term);
   });
 
   return uniqueTerms;
